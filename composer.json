@@ -22,7 +22,7 @@
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "8.0.99"
+            "php": "8.2.99"
         },
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true,
@@ -35,9 +35,8 @@
         }
     },
     "require": {
-        "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
+        "php": "~8.2.0 || ~8.3.0",
         "ext-json": "*",
-        "laminas-api-tools/api-tools-api-problem": "^1.6.0",
         "laminas/laminas-eventmanager": "^3.0.1",
         "laminas/laminas-filter": "^2.7.1",
         "laminas/laminas-http": "^2.5.4",
@@ -48,7 +47,8 @@
         "laminas/laminas-uri": "^2.5.2",
         "laminas/laminas-view": "^2.11.4",
         "laminas/laminas-zendframework-bridge": "^1.0",
-        "psr/link": "^1.0 || ^2.0"
+        "psr/link": "^1.0 || ^2.0",
+        "uniquesca/api-tools-api-problem": "^2.0.0"
     },
     "require-dev": {
         "laminas/laminas-coding-standard": "~2.3.0",
@@ -56,9 +56,9 @@
         "laminas/laminas-router": "^3.11",
         "phpdocumentor/reflection-docblock": "^5.2.2",
         "phpspec/prophecy-phpunit": "^2.0",
-        "phpunit/phpunit": "^9.5.27",
-        "psalm/plugin-phpunit": "^0.16.1",
-        "vimeo/psalm": "^4.30"
+        "phpunit/phpunit": "^9.6.11",
+        "psalm/plugin-phpunit": "^0.19.2",
+        "vimeo/psalm": "^6.0"
     },
     "autoload": {
         "psr-4": {
@@ -81,6 +81,12 @@
         "test-coverage": "phpunit --coverage-clover clover.xml",
         "static-analysis": "psalm --shepherd --stats --show-info=true"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://satis.unqs.ca"
+        }
+    ],
     "replace": {
         "zfcampus/zf-hal": "^1.6.0"
     }
