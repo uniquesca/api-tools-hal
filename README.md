@@ -1,6 +1,8 @@
 # Laminas HAL
 
-[![Build Status](https://github.com/laminas-api-tools/api-tools-hal/workflows/Continuous%20Integration/badge.svg)](https://github.com/laminas-api-tools/api-tools-hal/actions?query=workflow%3A"Continuous+Integration")
+> This is the Uniquesca fork of
+> [laminas-api-tools/api-tools-hal](https://github.com/laminas-api-tools/api-tools-hal).
+> It replaces the original package, so other `laminas-api-tools/*` packages depending on it keep working.
 
 > ## 🇷🇺 Русским гражданам
 >
@@ -32,14 +34,14 @@ Please see the [composer.json](composer.json) file.
 Run the following `composer` command:
 
 ```console
-$ composer require laminas-api-tools/api-tools-hal
+$ composer require uniquesca/api-tools-hal
 ```
 
 Alternately, manually add the following to your `composer.json`, in the `require` section:
 
 ```javascript
 "require": {
-    "laminas-api-tools/api-tools-hal": "^1.4"
+    "uniquesca/api-tools-hal": "^2.0"
 }
 ```
 

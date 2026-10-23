@@ -1,5 +1,5 @@
 {
-    "name": "laminas-api-tools/api-tools-hal",
+    "name": "uniquesca/api-tools-hal",
     "description": "Laminas Module providing Hypermedia Application Language assets and rendering",
     "license": "BSD-3-Clause",
     "keywords": [
@@ -10,12 +10,12 @@
         "rest",
         "hal"
     ],
-    "homepage": "https://api-tools.getlaminas.org",
+    "homepage": "https://github.com/uniquesca/api-tools-hal",
     "support": {
         "docs": "https://api-tools.getlaminas.org/documentation",
-        "issues": "https://github.com/laminas-api-tools/api-tools-hal/issues",
-        "source": "https://github.com/laminas-api-tools/api-tools-hal",
-        "rss": "https://github.com/laminas-api-tools/api-tools-hal/releases.atom",
+        "issues": "https://github.com/uniquesca/api-tools-hal/issues",
+        "source": "https://github.com/uniquesca/api-tools-hal",
+        "rss": "https://github.com/uniquesca/api-tools-hal/releases.atom",
         "chat": "https://laminas.dev/chat",
         "forum": "https://discourse.laminas.dev"
     },
@@ -88,6 +88,7 @@
         }
     ],
     "replace": {
+        "laminas-api-tools/api-tools-hal": "^1.10",
         "zfcampus/zf-hal": "^1.6.0"
     }
 }
