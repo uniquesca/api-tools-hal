@@ -1,5 +1,4 @@
-Laminas HAL
-======
+# Laminas HAL
 
 [![Build Status](https://github.com/laminas-api-tools/api-tools-hal/workflows/Continuous%20Integration/badge.svg)](https://github.com/laminas-api-tools/api-tools-hal/actions?query=workflow%3A"Continuous+Integration")
 
@@ -19,19 +18,16 @@ Laminas HAL
 >
 > You trust us enough to use our software. We ask that you trust us to say the truth on this. We need your help. Go out and protest this unnecessary war. Stop the bloodshed. Say "stop the war!"
 
-Introduction
-------------
+## Introduction
 
 This module provides the ability to generate [Hypermedia Application
 Language](http://tools.ietf.org/html/draft-kelly-json-hal-06) JSON representations.
 
-Requirements
-------------
+## Requirements
 
 Please see the [composer.json](composer.json) file.
 
-Installation
-------------
+## Installation
 
 Run the following `composer` command:
 
@@ -68,8 +64,7 @@ return [
 > If you use [laminas-component-installer](https://github.com/laminas/laminas-component-installer),
 > that plugin will install api-tools-hal as a module for you.
 
-Configuration
-=============
+## Configuration
 
 ### User Configuration
 
@@ -163,8 +158,7 @@ a Laminas-based application.
 ],
 ```
 
-Laminas Events
-==========
+## Laminas Events
 
 ### Events
 
@@ -232,19 +226,19 @@ Notes on individual events:
   `Laminas\ApiTools\Hal\Entity` being rendered, and `payload`, an `ArrayObject`
   representation of the entity, including links.
 - `createLink` defines the following event parameters:
-  - `route`, the route name to use when generating the link, if any.
-  - `id`, the entity identifier value to use when generating the link, if any.
-  - `entity`, the entity for which the link is being generated, if any.
-  - `params`, any additional routing parameters to use when generating the link.
+    - `route`, the route name to use when generating the link, if any.
+    - `id`, the entity identifier value to use when generating the link, if any.
+    - `entity`, the entity for which the link is being generated, if any.
+    - `params`, any additional routing parameters to use when generating the link.
 - `renderCollection.entity` defines the following event parameters:
-  - `collection`, the `Laminas\ApiTools\Hal\Collection` to which the entity belongs.
-  - `entity`, the current entity being rendered; this may or may not be a
-    `Laminas\ApiTools\Hal\Entity`.
-  - `route`, the route name for the current entity.
-  - `routeParams`, route parameters to use when generating links for the current
-    entity.
-  - `routeOptions`, route options to use when generating links for the current
-    entity.
+    - `collection`, the `Laminas\ApiTools\Hal\Collection` to which the entity belongs.
+    - `entity`, the current entity being rendered; this may or may not be a
+      `Laminas\ApiTools\Hal\Entity`.
+    - `route`, the route name for the current entity.
+    - `routeParams`, route parameters to use when generating links for the current
+      entity.
+    - `routeOptions`, route options to use when generating links for the current
+      entity.
 - `getIdFromEntity` defines one parameter, `entity`, which is an array or object
   from which an identifier needs to be extracted.
 - `fromLink.pre` (since 1.5.0) defines one parameter, `linkDefinition`, which is a
@@ -260,8 +254,7 @@ This listener is attached to `MvcEvent::EVENT_RENDER` at priority `100`.  If the
 result is a `HalJsonModel`, this listener attaches the `Laminas\ApiTools\Hal\JsonStrategy` to the view at
 priority `200`.
 
-Laminas Services
-============
+## Laminas Services
 
 ### Models
 
