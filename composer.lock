@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b4954605a920aae0f78f9e895d8acec",
+    "content-hash": "244c73b004df6c517ccf9440a3a85a7d",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -1582,9 +1582,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.unqs.ca/dist/uniquesca/api-tools-api-problem/uniquesca-api-tools-api-problem-bccfc56b1b54f8cec945740aba1ec8aa61efe7fc-zip-581566.zip",
+                "url": "https://api.github.com/repos/uniquesca/api-tools-api-problem/zipball/bccfc56b1b54f8cec945740aba1ec8aa61efe7fc",
                 "reference": "bccfc56b1b54f8cec945740aba1ec8aa61efe7fc",
-                "shasum": "435c65b75f58c13acb26507a9b4171519ac5d5e1"
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",

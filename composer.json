@@ -83,8 +83,8 @@
     },
     "repositories": [
         {
-            "type": "composer",
-            "url": "https://satis.unqs.ca"
+            "type": "vcs",
+            "url": "https://github.com/uniquesca/api-tools-api-problem"
         }
     ],
     "replace": {
